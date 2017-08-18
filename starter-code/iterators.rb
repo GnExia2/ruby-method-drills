@@ -5,10 +5,24 @@
   # takes in a string
   # counts the spaces in a string
   # returns number of spaces
+  def count_spaces(str)
+    count = 0
+    space = " "
+    str.each_char do |char|
+      if char == space
+        count += 1
+      end
+    end
+    count
+  end
+
 
 #string_lengths
   # takes in an array of strings
   # returns an array containing the lengths of the strings
+
+
+
 
 #remove_falsy_values
   # takes in a list
@@ -25,6 +39,7 @@
   # removes the first item from an array
   # removes the first character from a string
   # returns a new string - does not alter the original input (non-destructive)
+
 
 #exclude_ends
   # takes in an array or string

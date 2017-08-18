@@ -7,6 +7,12 @@
   # counts up or down
   # rounds off decimals
 
+def count_to(number)
+  number.times do |i|
+    p number
+end
+
+
 #is_integer?
   # takes in a number
   # returns true for Fixnums and Bignums (whole number or 'integer' types)
@@ -15,6 +21,10 @@
   # returns false for Float::NAN
   # returns false for non-numbers
 
+
+
+
+
 #is_prime?
   # takes in a number and checks if it's prime
   # returns false for non-integer decimals
@@ -22,12 +32,22 @@
   # returns false for numbers divisible by anything but 1 and themselves
   # returns true for prime numbers
   # Hint: google prime numbers!
+def is_prime(number)
+  if number == Float
+    return false
+  end
+end
+
 
 #primes_less_than
   # takes in a number
   # returns an empty array if there are no primes below num
   # does not return the number itself
   # finds all primes less than the given number
+
+
+
+
 
 ## STRETCH ##
 #iterative_factorial
